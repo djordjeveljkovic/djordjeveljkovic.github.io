@@ -1,0 +1,37 @@
+
+.ri-github-fill {
+    display: block;
+    width: 18px; /* Adjust size as needed */
+    height: 18px;
+    background-image: url('../icons/github-fill.svg');
+}
+.ri-global-fill {
+    display: block;
+    width: 18px; /* Adjust size as needed */
+    height: 18px;
+    background-image: url('../icons/global-fill.svg');
+}
+.ri-linkedin-fill {
+    display: block;
+    width: 16px; /* Adjust size as needed */
+    height: 16px;
+    background-image: url('../icons/linkedin-fill.svg');
+}
+.ri-calendar-line {
+    display: inline-block;
+    width: 22px; /* Adjust size as needed */
+    height: 22px;
+    background-image: url('../icons/calendar-line.svg');
+}
+.ri-mail-send-line {
+    display: inline-block;
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    background-image: url('../icons/mail-send-line.svg');
+}
+.ri-copyright-fill {
+    display: block;
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    background-image: url('../icons/copyright-fill.svg');
+}

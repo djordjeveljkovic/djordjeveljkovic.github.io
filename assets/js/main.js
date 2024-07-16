@@ -1,17 +1,25 @@
-jQuery(document).ready(function($) {
-	var mastheadheight = $('.ds-header').outerHeight();
-	//console.log(mastheadheight);
-	$(".ds-banner,.ds-main-section").css("margin-top" , mastheadheight);
+document.addEventListener('DOMContentLoaded', function() {
+	var masthead = document.querySelector('.ds-header');
+	var mastheadHeight = masthead.offsetHeight;
+	//console.log(mastheadHeight);
 
-	$(window).scroll(function(){
-	    if ($(window).scrollTop() >= 10) {
-	        $('.ds-header').addClass('ds-fixed-header');
-	    }
-	    else {
-	        $('.ds-header').removeClass('ds-fixed-header');
-	    }
-	}).scroll();
+	var bannerSections = document.querySelectorAll('.ds-banner, .ds-main-section');
+	bannerSections.forEach(function(section) {
+		section.style.marginTop = mastheadHeight + 'px';
+	});
+
+	window.addEventListener('scroll', function() {
+		if (window.pageYOffset >= 10) {
+			masthead.classList.add('ds-fixed-header');
+		} else {
+			masthead.classList.remove('ds-fixed-header');
+		}
+	});
+
+	// Initialize on page load
+	window.scroll();
 });
+
 
 // Handle form submission
 document.getElementById('contactForm').addEventListener('submit', function(event) {

@@ -1,7 +1,6 @@
 /*
-Theme Name: Jason Stroff
 
-  1. >>> Headr Style
+  1. >>> Header Style
   2. >>> Banner Style
   3. >>> About Style
   4. >>> Skills Style
@@ -13,6 +12,9 @@ Theme Name: Jason Stroff
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------*/
+@import url('inter.css');
+@import url('icons.css');
+
 html {font-family: 'Inter', sans-serif;background-color:#FFF}
 body {font-family: 'Inter', sans-serif;overflow-x: hidden; background-color:#FFF; font-weight:400;font-style: normal; color:#373737; font-size:14px}
 a,a:hover,a:focus,i,input,button,input:focus,.transition {text-decoration: none;outline: none;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease;box-shadow: none;}
@@ -92,7 +94,7 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 .ds-work-section{ padding-bottom: 80px; }
 .ds-work-list{ padding-left: 70px; padding-top:40px; padding-right: 70px; background-color:#F6F8FA; margin-bottom: 40px; }
 .ds-work-list section{ padding-top: 20px; padding-right: 120px; }
-.ds-work-title{ color: #000; font-size: 30px; line-height: 36px; font-weight: 600; margin-bottom: 10px; }
+.ds-work-title{ color: #000; font-size: 30px; font-weight: 600; margin-bottom: 10px; }
 .ds-work-date{ display: flex; justify-items: center; color: gray; font-size: 1.2rem; font-weight: 500; }
 .ds-work-list p{ font-weight: 300; font-size: 18px; line-height: 30px; }
 .ds-work-list .ds-button{ margin-top: 20px; }
@@ -114,7 +116,8 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 .ds-footer section span{ color: rgba(255,255,255,0.5); text-transform: uppercase; font-weight: 700; font-size: 16px; letter-spacing: 1px; display: block; padding-bottom: 20px; }
 .ds-footer section  h4{ color: #FFF; font-size: 48px; font-weight: 700; }
 .ds-footer section p{ letter-spacing: 1.13px; color: #FFF; font-size: 18px; margin-bottom: 20px; }
-.ds-copyright{ color: rgba(255,255,255,0.5); letter-spacing: 1px; font-size: 16px; display: flex; justify-content: center; align-items: center; margin: auto 0px }
+.ds-copyright{ color: rgba(255,255,255,0.5); letter-spacing: 1px; font-size: 16px; gap: 12px; display: flex; justify-content: center; align-items: center; margin: auto 0px }
+.ds-copyright span{ display: flex; justify-content: center; align-items: center; gap: 6px}
 
 form {
 	max-width: 400px; /* Adjust form width as needed */
@@ -154,22 +157,33 @@ textarea:focus {
 	align-items: center;
 }
 
+/* Popup Content */
 .popup-content {
 	background-color: #FFF;
-	padding: 20px;
-	max-width: 80%;
+	padding: 60px;
+	max-width: 700px;
 	text-align: center;
 	border-radius: 8px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	position: relative; /* Ensure position relative for absolute positioning of close button */
 }
 
+/* Close Button */
 .popup-close {
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 20px;
+	right: 20px;
 	cursor: pointer;
-	font-size: 20px;
+	font-size: 1.5rem;
 	color: #888;
+	padding: 0.1rem 0.6rem 0;
+	border: 2px solid #FFFFFF;
+	border-radius: 100%;
+}
+
+.popup-close:hover {
+	border: 2px solid #888;
+	border-radius: 100%;
 }
 
 /*-------------------------------------------------------------------------------
